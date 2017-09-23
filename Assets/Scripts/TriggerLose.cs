@@ -14,12 +14,14 @@ public class TriggerLose : MonoBehaviour {
 	
 	// Update is called once per frame
 	void OnTriggerExit (Collider col){
-		if (!isdead) {
-			col.transform.parent.gameObject.SetActive (false);
-			isdead = true;
+		if (col.tag == "player1") {
+			text.text = "RED WINS! BLUE LOSES!";
+			return;
 		}
-		if (isdead) {
-			text.text = "YOU LOSE";
+		if (col.tag == "player2") {
+			text.text = "BLUE WINS! RED LOSES!";
+			return;
 		}
+		col.transform.parent.gameObject.SetActive (false);
 	}
 }

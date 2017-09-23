@@ -16,30 +16,30 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
 		if (defaultcon == 0) {
 			if (Input.GetKey("up")){
-				transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z + 0.05f);
+				transform.position = new Vector3 (transform.position.x + 0.05f, transform.position.y, transform.position.z);
 			}
 			if (Input.GetKey("down")){
-				transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z - 0.05f);
-			}
-			if (Input.GetKey("left")){
 				transform.position = new Vector3 (transform.position.x - 0.05f, transform.position.y, transform.position.z);
 			}
+			if (Input.GetKey("left")){
+				transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z + 0.05f);
+			}
 			if (Input.GetKey("right")){
-				transform.position = new Vector3 (transform.position.x + 0.05f, transform.position.y, transform.position.z );
+				transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z - 0.05f );
 			}
 		}
 		if (defaultcon == 1) {
 			if (Input.GetKey(KeyCode.W)){
-				transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z + 0.05f);
+				transform.position = new Vector3 (transform.position.x + 0.05f, transform.position.y, transform.position.z);
 			}
 			if (Input.GetKey(KeyCode.S)){
-				transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z - 0.05f);
+				transform.position = new Vector3 (transform.position.x - 0.05f, transform.position.y, transform.position.z );
 			}
 			if (Input.GetKey(KeyCode.A)){
-				transform.position = new Vector3 (transform.position.x - 0.05f, transform.position.y, transform.position.z);
+				transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z + 0.05f);
 			}
 			if (Input.GetKey(KeyCode.D)){
-				transform.position = new Vector3 (transform.position.x + 0.05f, transform.position.y, transform.position.z );
+				transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z - 0.05f);
 			}
 		}
 	}
