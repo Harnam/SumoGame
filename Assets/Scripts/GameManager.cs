@@ -91,6 +91,8 @@ public class GameManager : MonoBehaviour {
 		unpause.gameObject.SetActive (false);
 		reset.gameObject.SetActive (false);
 		bg.gameObject.SetActive (false);
+		Scene scene = SceneManager.GetActiveScene ();
+		SceneManager.LoadScene (scene.name);
 		p1.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 		p2.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 		ispaused = false;

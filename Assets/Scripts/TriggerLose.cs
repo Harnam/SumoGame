@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TriggerLose : MonoBehaviour {
 
 	public Text text;
-	bool isdead = false;
+	//bool isdead = false;
 
 	// Use this for initialization
 	void Start () {
