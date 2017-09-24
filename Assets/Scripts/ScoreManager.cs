@@ -23,13 +23,13 @@ public class ScoreManager : MonoBehaviour {
 		p2score.text = PlayerPrefs.GetInt("RedScore").ToString();
 		if (!pl1.activeSelf) {
 			p2s++;
-			PlayerPrefs.SetInt ("RedScore", PlayerPrefs.GetInt("RedScore")+1);
+			PlayerPrefs.SetInt ("BlueScore", PlayerPrefs.GetInt("BlueScore")+1);
 			Scene scene = SceneManager.GetActiveScene ();
 			SceneManager.LoadScene (scene.name);
 		}
 		if (!pl2.activeSelf) {
 			p1s++;
-			PlayerPrefs.SetInt ("BlueScore", PlayerPrefs.GetInt("BlueScore")+1);
+			PlayerPrefs.SetInt ("RedScore", PlayerPrefs.GetInt("RedScore")+1);
 			Scene scene = SceneManager.GetActiveScene ();
 			SceneManager.LoadScene (scene.name);
 		}
