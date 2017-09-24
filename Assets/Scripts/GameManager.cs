@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour {
 		unpause.gameObject.SetActive (false);
 		reset.gameObject.SetActive (false);
 		bg.gameObject.SetActive (false);
+		Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour {
 				p1.gameObject.GetComponent<PlayerMovement> ().enabled = false;
 				p2.gameObject.GetComponent<PlayerMovement> ().enabled = false;
 				ispaused = true;
+				Cursor.visible = true;
 			} else if (ispaused) {
 				quitgame.gameObject.SetActive (false);
 				unpause.gameObject.SetActive (false);
@@ -57,6 +59,7 @@ public class GameManager : MonoBehaviour {
 				p1.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 				p2.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 				ispaused = false;
+				Cursor.visible = false;
 			} else {
 				Debug.Log("Noob");
 			}
@@ -82,6 +85,7 @@ public class GameManager : MonoBehaviour {
 		p1.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 		p2.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 		ispaused = false;
+		Cursor.visible = false;
 	}
 
 	public void resetscore(){
