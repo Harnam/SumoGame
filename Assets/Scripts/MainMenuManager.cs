@@ -30,4 +30,8 @@ public class MainMenuManager : MonoBehaviour {
 	public void chgsetting(){
 		SceneManager.LoadScene ("settings");
 	}
+
+	public void customization(){
+		SceneManager.LoadScene ("Customization");
+	}
 }
