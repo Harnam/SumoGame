@@ -26,4 +26,8 @@ public class MainMenuManager : MonoBehaviour {
 	public void gamestart(){
 		SceneManager.LoadScene ("main");
 	}
+
+	public void chgsetting(){
+		SceneManager.LoadScene ("settings");
+	}
 }
