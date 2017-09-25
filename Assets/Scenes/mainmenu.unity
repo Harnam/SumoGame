@@ -1142,8 +1142,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -189, y: 80}
-  m_SizeDelta: {x: 348, y: 133}
+  m_AnchoredPosition: {x: -189, y: 91.7}
+  m_SizeDelta: {x: 348, y: 109.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1655770841
 MonoBehaviour:
