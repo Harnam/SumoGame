@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
 	public Button unpause;
 	public Button reset;
 	public Image bg;
+	public Button gotomain;
 	bool ispaused = false;
 
 	// Use this for initialization
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour {
 		quitgame.gameObject.SetActive (false);
 		unpause.gameObject.SetActive (false);
 		reset.gameObject.SetActive (false);
+		gotomain.gameObject.SetActive (false);
 		bg.gameObject.SetActive (false);
 		Cursor.visible = false;
 	}
@@ -46,6 +48,7 @@ public class GameManager : MonoBehaviour {
 				quitgame.gameObject.SetActive (true);
 				unpause.gameObject.SetActive (true);
 				reset.gameObject.SetActive (true);
+				gotomain.gameObject.SetActive (true);
 				bg.gameObject.SetActive (true);
 				p1.gameObject.GetComponent<PlayerMovement> ().enabled = false;
 				p2.gameObject.GetComponent<PlayerMovement> ().enabled = false;
@@ -56,6 +59,7 @@ public class GameManager : MonoBehaviour {
 				unpause.gameObject.SetActive (false);
 				reset.gameObject.SetActive (false);
 				bg.gameObject.SetActive (false);
+				gotomain.gameObject.SetActive (false);
 				p1.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 				p2.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 				ispaused = false;
@@ -82,6 +86,7 @@ public class GameManager : MonoBehaviour {
 		unpause.gameObject.SetActive (false);
 		reset.gameObject.SetActive (false);
 		bg.gameObject.SetActive (false);
+		gotomain.gameObject.SetActive (false);
 		p1.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 		p2.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 		ispaused = false;
@@ -105,4 +110,9 @@ public class GameManager : MonoBehaviour {
 	public void quigame(){
 		Application.Quit ();
 	}
+
+	public void mainmen(){
+		SceneManager.LoadScene ("mainmenu");
+	}
+
 }
