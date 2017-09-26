@@ -28,4 +28,11 @@ public class bpcolorManager : MonoBehaviour {
 		SceneManager.LoadScene ("customcolor");
 	}
 
+	public void resetbpcolor(){
+		PlayerPrefs.SetInt ("bp-righthand", 8);
+		PlayerPrefs.SetInt ("bp-rightleg", 8);
+		PlayerPrefs.SetInt ("bp-leftleg", 8);
+		PlayerPrefs.SetInt ("bp-lefthand", 8);
+	}
+
 }

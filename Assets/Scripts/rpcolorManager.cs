@@ -28,4 +28,11 @@ public class rpcolorManager : MonoBehaviour {
 		SceneManager.LoadScene ("customcolor");
 	}
 
+	public void resetrpcolor(){
+		PlayerPrefs.SetInt ("rp-righthand", 8);
+		PlayerPrefs.SetInt ("rp-rightleg", 8);
+		PlayerPrefs.SetInt ("rp-leftleg", 8);
+		PlayerPrefs.SetInt ("rp-lefthand", 8);
+	}
+
 }
