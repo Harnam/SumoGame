@@ -114,6 +114,7 @@ GameObject:
   - 23: {fileID: 23000013607487658}
   - 54: {fileID: 54000010419713386}
   - 114: {fileID: 114000011570136806}
+  - 114: {fileID: 114000011207818116}
   m_Layer: 0
   m_Name: Wrestler 1
   m_TagString: player1
@@ -971,9 +972,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012023878890}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1003,6 +1004,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114000011207818116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012023878890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5521987636f670a48ae16ea0782635eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1: {fileID: 1000012023878890}
 --- !u!114 &114000011570136806
 MonoBehaviour:
   m_ObjectHideFlags: 1

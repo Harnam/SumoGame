@@ -47,4 +47,48 @@ public class bprightleg : MonoBehaviour {
 	public void backbtn(){
 		SceneManager.LoadScene ("customcolor-bp");
 	}
+
+	public void rpbluebtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 1);
+		Debug.Log ("WOW");
+	}
+
+	public void rpblackbtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 2);
+		Debug.Log ("WOW");
+	}
+
+	public void rpcyanbtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 3);
+		Debug.Log ("WOW");
+	}
+
+	public void rpgraybtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 4);
+		Debug.Log ("WOW");
+	}
+	public void rpgreenbtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 5);
+		Debug.Log ("WOW");
+	}
+	public void rpmagentabtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 6);
+		Debug.Log ("WOW");
+	}
+	public void rpredbtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 7);
+	}
+
+	public void rpwhitebtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 8);
+		Debug.Log ("WOW");
+	}
+	public void rpyellowbtn(){
+		PlayerPrefs.SetInt ("rp-rightleg", 9);
+		Debug.Log ("WOW");
+	}
+
+	public void rpbackbtn(){
+		SceneManager.LoadScene ("customcolor-rp");
+	}
 }

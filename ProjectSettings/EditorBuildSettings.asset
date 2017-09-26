@@ -16,8 +16,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/customcolor-bp.unity
   - enabled: 1
-    path: Assets/Scenes/customcolor-rp.unity
-  - enabled: 1
     path: Assets/Scenes/bp-righthand.unity
   - enabled: 1
     path: Assets/Scenes/bp-lefthand.unity
@@ -25,6 +23,16 @@ EditorBuildSettings:
     path: Assets/Scenes/bp-leftleg.unity
   - enabled: 1
     path: Assets/Scenes/bp-rightleg.unity
+  - enabled: 1
+    path: Assets/Scenes/customcolor-rp.unity
+  - enabled: 1
+    path: Assets/Scenes/rp-lefthand.unity
+  - enabled: 1
+    path: Assets/Scenes/rp-leftleg.unity
+  - enabled: 1
+    path: Assets/Scenes/rp-righthand.unity
+  - enabled: 1
+    path: Assets/Scenes/rp-rightleg.unity
   - enabled: 1
     path: Assets/Scenes/customhat.unity
   - enabled: 1
