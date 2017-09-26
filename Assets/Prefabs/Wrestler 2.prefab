@@ -1018,6 +1018,7 @@ MonoBehaviour:
   valueforce: 5
   rb: {fileID: 54000010419713386}
   defaultcon: 1
+  speedval: 300
 --- !u!114 &114000011896243752
 MonoBehaviour:
   m_ObjectHideFlags: 1

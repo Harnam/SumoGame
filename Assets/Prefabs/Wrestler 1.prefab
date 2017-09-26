@@ -1030,6 +1030,7 @@ MonoBehaviour:
   valueforce: 5
   rb: {fileID: 54000010419713386}
   defaultcon: 0
+  speedval: 300
 --- !u!135 &135000010369425704
 SphereCollider:
   m_ObjectHideFlags: 1
