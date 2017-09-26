@@ -24,7 +24,7 @@ public class MainMenuManager : MonoBehaviour {
 	}
 
 	public void gamestart(){
-		SceneManager.LoadScene ("main");
+		SceneManager.LoadScene ("Loading");
 	}
 
 	public void chgsetting(){
