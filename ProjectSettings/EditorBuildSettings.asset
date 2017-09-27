@@ -39,3 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/customhat.unity
   - enabled: 1
     path: Assets/Scenes/Main.unity
+  - enabled: 1
+    path: Assets/Scenes/bluewins.unity
+  - enabled: 1
+    path: Assets/Scenes/redwins.unity

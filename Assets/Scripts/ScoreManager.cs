@@ -24,14 +24,14 @@ public class ScoreManager : MonoBehaviour {
 		if (!pl1.activeSelf) {
 			p2s++;
 			PlayerPrefs.SetInt ("BlueScore", PlayerPrefs.GetInt("BlueScore")+1);
-			Scene scene = SceneManager.GetActiveScene ();
-			SceneManager.LoadScene (scene.name);
+			//Scene scene = SceneManager.GetActiveScene ();
+			SceneManager.LoadScene ("redwins");
 		}
 		if (!pl2.activeSelf) {
 			p1s++;
 			PlayerPrefs.SetInt ("RedScore", PlayerPrefs.GetInt("RedScore")+1);
-			Scene scene = SceneManager.GetActiveScene ();
-			SceneManager.LoadScene (scene.name);
+			//Scene scene = SceneManager.GetActiveScene ();
+			SceneManager.LoadScene ("bluewins");
 		}
 	}
 }
