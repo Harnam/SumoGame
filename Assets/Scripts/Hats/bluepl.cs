@@ -15,6 +15,7 @@ public class bluepl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
 		int pref = PlayerPrefs.GetInt("bluehat");
 		if (pref == 0) {
 			Debug.LogWarning ("No Hat for blue");

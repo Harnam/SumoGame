@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class customhatred : MonoBehaviour {
 
+	void Start(){
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
+	}
+
 	public void bt1(){
 		PlayerPrefs.SetInt ("redhat", 1);
 	}

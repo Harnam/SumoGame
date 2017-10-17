@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class WinManager : MonoBehaviour {
 
 	public void Start(){
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
 		Cursor.visible = true;
 	}
 

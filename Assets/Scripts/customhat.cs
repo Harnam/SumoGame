@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class customhat : MonoBehaviour {
 
+	void Start(){
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
+	}
+
 	public void redpl(){
 		SceneManager.LoadScene ("customhatred");
 	}

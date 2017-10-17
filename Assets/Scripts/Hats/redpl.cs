@@ -15,6 +15,7 @@ public class redpl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
 		int pref = PlayerPrefs.GetInt("redhat");
 		if (pref == 0) {
 			Debug.Log ("No Hat for red");

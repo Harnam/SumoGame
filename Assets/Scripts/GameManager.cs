@@ -21,9 +21,13 @@ public class GameManager : MonoBehaviour {
 	public Text txt2;
 	public Text txt3;
 	bool isload = false;
+	public GameObject redcon;
+	public GameObject bluecon;
 
 	// Use this for initialization
 	void Start () {
+		redcon.gameObject.SetActive (true);
+		bluecon.gameObject.SetActive (true);
 		restart.gameObject.SetActive (false);
 		quit.gameObject.SetActive (false);
 		quitgame.gameObject.SetActive (false);
@@ -45,6 +49,7 @@ public class GameManager : MonoBehaviour {
 		StartCoroutine(txt1enable());
 		StartCoroutine(txt2enable());
 		StartCoroutine(imgenable());
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
 	}
 	
 	// Update is called once per frame
@@ -71,6 +76,8 @@ public class GameManager : MonoBehaviour {
 					bg.gameObject.SetActive (true);
 					p1.gameObject.GetComponent<PlayerMovement> ().enabled = false;
 					p2.gameObject.GetComponent<PlayerMovement> ().enabled = false;
+					redcon.gameObject.SetActive (false);
+					bluecon.gameObject.SetActive (false);
 					ispaused = true;
 					Cursor.visible = true;
 				} else if (ispaused) {
@@ -81,6 +88,8 @@ public class GameManager : MonoBehaviour {
 					gotomain.gameObject.SetActive (false);
 					p1.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 					p2.gameObject.GetComponent<PlayerMovement> ().enabled = true;
+					redcon.gameObject.SetActive (true);
+					bluecon.gameObject.SetActive (true);
 					ispaused = false;
 					Cursor.visible = false;
 				} else {
@@ -109,6 +118,8 @@ public class GameManager : MonoBehaviour {
 		gotomain.gameObject.SetActive (false);
 		p1.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 		p2.gameObject.GetComponent<PlayerMovement> ().enabled = true;
+		redcon.gameObject.SetActive (true);
+		bluecon.gameObject.SetActive (true);
 		ispaused = false;
 		Cursor.visible = false;
 	}
@@ -139,6 +150,7 @@ public class GameManager : MonoBehaviour {
 		yield return new WaitForSeconds(4);
 		p1.gameObject.GetComponent<PlayerMovement> ().enabled = true;
 		p2.gameObject.GetComponent<PlayerMovement> ().enabled = true;
+		p1.gameObject.GetComponent<PlayerMovement> ().bluework = true;
 		Debug.Log ("START");
 		isload = true;
 	}
